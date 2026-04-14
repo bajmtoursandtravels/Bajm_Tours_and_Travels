@@ -77,7 +77,7 @@ const PackageCard = ({ pkg, featured = false }) => {
             <FaPhone /> {t('card.call')}
           </a>
           <a 
-            href={`mailto:info@bajmtours.com?subject=Inquiry: ${title}&body=I am interested in the ${title} package.`}
+            href={`https://mail.google.com/mail/?view=cm&fs=1&to=bajmtoursandtravels@gmail.com`}
             className="btn btn-email btn-sm"
           >
             <FaEnvelope /> {t('card.email')}

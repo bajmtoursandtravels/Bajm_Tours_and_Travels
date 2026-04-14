@@ -59,7 +59,7 @@ const Footer = () => {
                 <a href="https://www.facebook.com/profile.php?id=61569226280949" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                   <FaFacebook />
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bajmtours.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bajmtoursandtravels@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
                   <FaEnvelope />
                 </a>
                 <a href="https://youtube.com/@bazmislamic?si=KRHR-oOeSzbHKyhq" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
@@ -102,7 +102,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <FaEnvelope className="footer-contact-icon" />
-                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@bajmtours.com" target="_blank" rel="noopener noreferrer">info@bajmtours.in</a>
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=bajmtoursandtravels@gmail.com" target="_blank" rel="noopener noreferrer">bajmtoursandtravels@gmail.com</a>
                 </li>
                 <li>
                   <FaMapMarkerAlt className="footer-contact-icon" />

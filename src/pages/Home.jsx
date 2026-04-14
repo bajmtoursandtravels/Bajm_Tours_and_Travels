@@ -336,7 +336,7 @@ const Home = () => {
               <FaEnvelope className="contact-icon" />
               <h3>{t('home.emailLabel')}</h3>
               <p>{t('home.emailDesc')}</p>
-              <span className="contact-value">info@bajmtours.com</span>
+              <span className="contact-value">bajmtoursandtravels@gmail.com</span>
             </a>
           </div>
         </div>
