@@ -52,7 +52,7 @@ const Footer = () => {
               <p className="footer-description">
                 {t('footer.description')} {t('footer.description2')}
               </p>
-              <div className="footer-socials">
+              {/* <div className="footer-socials">
                 <a href="https://www.instagram.com/bajm_tours_and_travels/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                   <FaInstagram />
                 </a>
@@ -65,7 +65,7 @@ const Footer = () => {
                 <a href="https://youtube.com/@bazmislamic?si=KRHR-oOeSzbHKyhq" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
                   <FaYoutube />
                 </a>
-              </div>
+              </div> */}
             </div>
 
             {/* Quick Links */}

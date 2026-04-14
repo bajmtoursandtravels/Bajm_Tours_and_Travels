@@ -101,6 +101,86 @@
   margin-left: 0.5rem;
 }
 
+.navbar-socials-li {
+  list-style: none;
+  margin-left: 0.45rem;
+}
+
+.navbar-socials {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.navbar-social-link {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--white);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background var(--transition-fast),
+              border-color var(--transition-fast),
+              color var(--transition-fast),
+              transform var(--transition-fast);
+}
+
+.navbar-social-link:hover {
+  transform: translateY(-1px);
+}
+
+.navbar-social-link:not(.social-instagram):not(.social-whatsapp):not(.social-facebook):not(.social-email):not(.social-youtube):hover {
+  background: rgba(201, 168, 76, 0.22);
+  border-color: var(--gold);
+  color: var(--gold-light);
+}
+
+.social-instagram,
+.social-whatsapp,
+.social-facebook,
+.social-email,
+.social-youtube {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+.social-instagram {
+  background: radial-gradient(circle at 32% 26%, #ffe7b0 0%, #ff9f5a 28%, #f56040 48%, #c13584 70%, #5851db 100%);
+  box-shadow: 0 4px 14px rgba(197, 53, 132, 0.35);
+}
+
+.social-whatsapp {
+  background: radial-gradient(circle at 32% 26%, #c8ffd8 0%, #45df64 42%, #25d366 70%, #1d9d4e 100%);
+  box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+}
+
+.social-facebook {
+  background: radial-gradient(circle at 32% 26%, #bfd6ff 0%, #78a3ff 40%, #1877f2 70%, #0f56c2 100%);
+  box-shadow: 0 4px 14px rgba(24, 119, 242, 0.38);
+}
+
+.social-email {
+  background: conic-gradient(from 210deg at 50% 50%, #4285f4 0deg 90deg, #34a853 90deg 180deg, #fbbc05 180deg 270deg, #ea4335 270deg 360deg);
+  /* box-shadow: 0 4px 14px rgba(234, 67, 53, 0.34); */
+}
+
+.social-youtube {
+  background: radial-gradient(circle at 34% 24%, #ff9898 0%, #ff3b3b 42%, #ff0000 70%, #cf0000 100%);
+  /* box-shadow: 0 4px 14px rgba(255, 0, 0, 0.38); */
+}
+
+.social-instagram:hover,
+.social-whatsapp:hover,
+.social-facebook:hover,
+.social-email:hover,
+.social-youtube:hover {
+  filter: brightness(1.06) saturate(1.03);
+  border-color: rgba(255, 255, 255, 0.62);
+}
+
 .navbar-toggle {
   display: none;
   font-size: 1.5rem;
@@ -152,6 +232,27 @@
     margin-top: 1rem;
     width: 100%;
     text-align: center;
+  }
+
+  .navbar-socials-li {
+    margin-left: 0;
+    margin-top: 0.6rem;
+    width: 100%;
+  }
+
+  .navbar-socials {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 0.6rem;
+  }
+
+  .navbar-social-link {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border-color: rgba(201, 168, 76, 0.35);
+    background: rgba(255, 255, 255, 0.08);
+    font-size: 1rem;
   }
 
   .navbar-overlay {

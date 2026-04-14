@@ -1,16 +1,16 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes, FaGlobe } from 'react-icons/fa';
+import { FaBars, FaTimes, FaGlobe, FaInstagram, FaWhatsapp, FaFacebook, FaEnvelope, FaYoutube } from 'react-icons/fa';
 import { useLang } from '../i18n/LanguageContext';
 import './Navbar.css';
 import logo from '../assets/bajm-tours-logo.png';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen]     = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [langOpen, setLangOpen] = useState(false);
-  const langRef                 = useRef(null);
-  const location                = useLocation();
+  const langRef = useRef(null);
+  const location = useLocation();
   const { lang, setLang, LANGUAGES, t } = useLang();
 
   useEffect(() => {
@@ -33,10 +33,10 @@ const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { label: t('nav.home'), path: '/'         },
+    { label: t('nav.home'), path: '/' },
     { label: t('nav.packages'), path: '/packages' },
-    { label: t('nav.about'), path: '/about'    },
-    { label: t('nav.gallery'), path: '/gallery'  },
+    { label: t('nav.about'), path: '/about' },
+    { label: t('nav.gallery'), path: '/gallery' },
     { label: t('nav.contact'), path: '/#contact' },
   ];
 
@@ -85,18 +85,6 @@ const Navbar = () => {
             </li>
           ))}
 
-          {/* Book Now — unchanged */}
-          <li>
-            <a
-              href="https://wa.me/919028889789?text=AssalamuAlaikum, I am interested in your Umrah packages"
-              className="btn btn-primary btn-sm nav-cta"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {t('nav.bookNow')}
-            </a>
-          </li>
-
           {/* ── Globe Language Switcher (NEW) ── */}
           <li className="lang-li" ref={langRef}>
             <button
@@ -127,7 +115,69 @@ const Navbar = () => {
             )}
           </li>
 
+          <li className="navbar-socials-li">
+            <div className="navbar-socials" aria-label="Social links">
+              <a
+                href="https://www.instagram.com/bajm_tours_and_travels/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                className="navbar-social-link social-instagram"
+              >
+                <FaInstagram />
+              </a>
+              <a
+                href="https://wa.me/919028889789?text=AssalamuAlaikum, I am interested in your Umrah packages"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WhatsApp"
+                className="navbar-social-link social-whatsapp"
+              >
+                <FaWhatsapp />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61569226280949"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                className="navbar-social-link social-facebook"
+              >
+                <FaFacebook />
+              </a>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=bajmtoursandtravels@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Email"
+                className="navbar-social-link social-email"
+              >
+                <FaEnvelope />
+              </a>
+              <a
+                href="https://youtube.com/@bazmislamic?si=KRHR-oOeSzbHKyhq"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="YouTube"
+                className="navbar-social-link social-youtube"
+              >
+                <FaYoutube />
+              </a>
+            </div>
+          </li>
+
+          {/* Book Now — unchanged */}
+          <li>
+            <a
+              href="https://wa.me/919028889789?text=AssalamuAlaikum, I am interested in your Umrah packages"
+              className="btn btn-primary btn-sm nav-cta"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t('nav.bookNow')}
+            </a>
+          </li>
         </ul>
+
       </div>
 
       {isOpen && <div className="navbar-overlay" onClick={() => setIsOpen(false)} />}
