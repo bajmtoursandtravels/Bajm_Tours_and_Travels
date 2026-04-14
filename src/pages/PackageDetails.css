@@ -206,7 +206,7 @@
 
 .price-value {
   display: block;
-  /* font-family: var(--font-heading); */
+  /* font-fam ily: var(--font-heading); */
   font-size: 2.5rem;
   font-weight: 800;
   color: var(--gold);
