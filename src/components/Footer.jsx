@@ -98,7 +98,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <FaWhatsapp className="footer-contact-icon" />
-                  <a href="https://wa.me/919080809330" target="_blank" rel="noopener noreferrer">Moulana Niyaz Ahmad Alvi</a>
+                  <a href="https://wa.me/919028889789" target="_blank" rel="noopener noreferrer">Moulana Niyaz Ahmad Alvi</a>
                 </li>
                 <li>
                   <FaEnvelope className="footer-contact-icon" />
